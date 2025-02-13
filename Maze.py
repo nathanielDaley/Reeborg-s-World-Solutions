@@ -7,6 +7,8 @@ while not at_goal():
     if right_is_clear():
         turn_right()
         move()
+        if right_is_clear() and front_is_clear():
+            move()
     elif front_is_clear():
         move()
     else:
